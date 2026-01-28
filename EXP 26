@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp = fopen("data.txt","w");
+    fprintf(fp,"File Management");
+    fclose(fp);
+
+    remove("data.txt");
+    printf("File deleted\n");
+}
