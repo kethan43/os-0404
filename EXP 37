@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+    int q[]={98,183,37}, head=53, i, seek=0;
+    for(i=0;i<3;i++){
+        seek+=abs(head-q[i]);
+        head=q[i];
+    }
+    printf("Seek time=%d",seek);
+}
