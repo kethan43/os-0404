@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+    int start, len, i;
+    scanf("%d%d",&start,&len);
+    for(i=start;i<start+len;i++)
+        printf("Block %d allocated\n",i);
+}
