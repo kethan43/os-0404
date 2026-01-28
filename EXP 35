@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+    int index, n, i, block[10];
+    scanf("%d%d",&index,&n);
+    for(i=0;i<n;i++) scanf("%d",&block[i]);
+
+    for(i=0;i<n;i++)
+        printf("Index %d -> Block %d\n",index,block[i]);
+}
