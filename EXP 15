@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char dir[5][5][20];
+    int d, f, i, j;
+
+    printf("Enter number of directories: ");
+    scanf("%d", &d);
+
+    for (i = 0; i < d; i++) {
+        printf("Enter number of files in directory %d: ", i);
+        scanf("%d", &f);
+
+        for (j = 0; j < f; j++) {
+            scanf("%s", dir[i][j]);
+        }
+    }
+
+    printf("\nDirectory Structure:\n");
+    for (i = 0; i < d; i++) {
+        printf("Directory %d:\n", i);
+        for (j = 0; j < f; j++)
+            printf("  %s\n", dir[i][j]);
+    }
+    return 0;
+}
