@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(){
+    printf("User Types: Owner, Group, Others\n");
+    printf("Permissions: Read(r), Write(w), Execute(x)\n");
+    printf("Example: chmod 755 file\n");
+}
