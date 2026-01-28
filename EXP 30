@@ -1,0 +1,14 @@
+#include <pthread.h>
+#include <stdio.h>
+
+void* fun(void* arg){
+    printf("Thread running\n");
+    pthread_exit(NULL);
+}
+
+int main(){
+    pthread_t t;
+    pthread_create(&t,NULL,fun,NULL);   // create
+    pthread_join(t,NULL);               // join
+    printf("Threads equal: %d\n", pthread_equal(t,pthread_self()));
+}
