@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    FILE *fp = fopen("file.txt","r");
+    char line[100];
+    char word[]="UNIX";
+
+    while(fgets(line,100,fp))
+        if(strstr(line,word))
+            printf("%s",line);
+    fclose(fp);
+}
